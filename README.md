@@ -9,6 +9,7 @@ git clone git@github.com:TallerTecnologias2/Evaluacion1-Registro.git
 2. Crear archivo hardhat.config
 
 hardhat init
+
 seleecionar la opción: Create an empty hardhat.config.js
 
 3. Instalar dependencias
@@ -18,6 +19,7 @@ npm install
 OPCIONAL: Si el punto anterior no instala todas las dependencias necesarias. Ejecutar los siguientes comandos:
 
 npm install @nomiclabs/hardhat-ethers
+
 npm install dotenv
 
 ## Task
