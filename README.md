@@ -4,37 +4,47 @@
 
 1. Clonar el repositorio
 
-git clone git@github.com:TallerTecnologias2/Evaluacion1-Registro.git
+`git clone git@github.com:TallerTecnologias2/Evaluacion1-Registro.git`
 
-2. Crear archivo hardhat.config
+2. Instalar dependencias
 
-hardhat init
+`npm install`
 
-seleecionar la opción: Create an empty hardhat.config.js
+3. Iniciar proyecto de Hardhat con `npx hardhat init` y seleccionar la opción: `Create an empty hardhat.config.js`
 
-3. Instalar dependencias
+4. En el recién creado archivo `hardhat.config.js`, reemplazar la configuración existente por la siguiente:
 
-npm install
+```
+require('dotenv').config();
+require('@nomiclabs/hardhat-ethers');
 
-OPCIONAL: Si el punto anterior no instala todas las dependencias necesarias. Ejecutar los siguientes comandos:
-
-npm install @nomiclabs/hardhat-ethers
-
-npm install dotenv
+/**
+ * @type import('hardhat/config').HardhatUserConfig
+ */
+module.exports = {
+  solidity: "0.8.9",
+  networks: {
+    rinkeby: {
+        chainId:  4,
+		    from: process.env.RINKEBY_ACCOUNT,
+        accounts: [process.env.RINKEBY_PRIVATE_KEY]
+	  }
+  }
+};
+```
 
 ## Task
 
-Escriba el código necesario para llamar a los métodos del contrato "studentRegistry.sol" ubicado en la carpeta "contracts". El cual ya se encuentra deployado en la red de Rinkeby en el addres que se ubica en el archivo env, en la variable REGISTRY_CONTRACT_ADDRESS.
+Escriba el código necesario para llamar a los métodos del contrato `studentRegistry.sol` ubicado en la carpeta `contracts`. El contrato se encuentra deployado en la red de Rinkeby en el address que se ubica en el archivo `.env` en la variable `REGISTRY_CONTRACT_ADDRESS`.
 
-IMPORTANTE: Se registrará la dirección de la cuenta utilizada para enviar la transacción, como la dirección del usuario para el resto del curso, por lo que es MUY IMPORTANTE que no pierda el acceso a su cuenta. Toma todas las precauciones
-necesarios para almacenar correctamente la clave privada asociada a dicha cuenta.
+>**IMPORTANTE**: La dirección (address) de la cuenta utilizada para enviar la transacción se registrará como la dirección del usuario para el resto del curso. Es MUY IMPORTANTE que **no pierda** el acceso a su cuenta. Toma todas las precauciones necesarios para almacenar correctamente la clave privada asociada a dicha cuenta.
 
 ## Push changes
 
 1. Agregar su repositorio
 
-git remote add origin <URL_A_SU_GITHUB_REPO>
+`git remote add origin <URL_A_SU_GITHUB_REPO>`
 
 2. Publicar cambios a su repositorio
 
-git push origin master
+`git push origin master`
