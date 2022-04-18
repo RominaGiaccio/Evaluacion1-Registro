@@ -25,10 +25,12 @@ async function main() {
     // Llame al método de registro de usuario
 
     // Llame al método para obtener su puntuación y muestrela en la consola
+    const myScore = 0;
+    console.log("");
+    console.log("-- Your score is: ", myScore);
 
     //------------------------------------------------------------------------
     
-    console.log("");
     console.log("---------------------------------------------------------------------------------------");
     console.log("-- Registration complete");
     console.log("---------------------------------------------------------------------------------------");
