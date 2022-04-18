@@ -22,9 +22,9 @@ module.exports = {
   networks: {
     rinkeby: {
         chainId:  4,
-		    from: process.env.RINKEBY_ACCOUNT,
+    	from: process.env.RINKEBY_ACCOUNT,
         accounts: [process.env.RINKEBY_PRIVATE_KEY]
-	  }
+    }
   }
 };
 ```
