@@ -41,4 +41,4 @@ Escriba el código necesario para llamar a los métodos del contrato `studentReg
 
 1. Publicar cambios a su repositorio
 
-`git push origin master`
+`git push origin main`
