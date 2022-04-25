@@ -39,6 +39,8 @@ Escriba el código necesario para llamar a los métodos del contrato `studentReg
 
 ## Push changes
 
-1. Publicar cambios a su repositorio
+1. Agregar el archivo .env al archivo .gitignore
+2. Revise el archivo 'scripts/registration.js' y aregue las lineas de código faltantes para completar la tarea pedida
+3. Publicar cambios a su repositorio
 
 `git push origin main`
