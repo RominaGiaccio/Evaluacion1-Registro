@@ -2,7 +2,7 @@
 
 ## Setup
 
-1. Clonar el repositorio `git clone git@github.com:TallerTecnologias2/Evaluacion1-Registro.git`
+1. Clonar el repositorio `git clone https://github.com/TallerTecnologias2/Evaluacion1-Registro.git`
 
 2. Instalar dependencias `npm install`
 
