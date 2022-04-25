@@ -4,7 +4,7 @@
 
 1. Fork este repositorio con el menú de github arriba a la derecha a su usuario de github
 
-2. Clonar el repositorio `git clone https://github.com/<Github user>/Evaluacion1-Registro.git`
+2. Clonar el repositorio con el comando git clone
 
 3. Instalar dependencias `npm install`
 
