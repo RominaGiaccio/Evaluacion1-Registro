@@ -2,13 +2,15 @@
 
 ## Setup
 
-1. Clonar el repositorio `git clone https://github.com/TallerTecnologias2/Evaluacion1-Registro.git`
+1. Fork este repositorio con el menú de github arriba a la derecha a su usuario de github
 
-2. Instalar dependencias `npm install`
+2. Clonar el repositorio `git clone https://github.com/<Github user>/Evaluacion1-Registro.git`
 
-3. Iniciar proyecto de Hardhat con `npx hardhat init` y seleccionar la opción: `Create an empty hardhat.config.js`
+3. Instalar dependencias `npm install`
 
-4. En el recién creado archivo `hardhat.config.js`, reemplazar la configuración existente por la siguiente:
+4. Iniciar proyecto de Hardhat con `npx hardhat init` y seleccionar la opción: `Create an empty hardhat.config.js`
+
+5. En el recién creado archivo `hardhat.config.js`, reemplazar la configuración existente por la siguiente:
 
 ```
 require('dotenv').config();
@@ -37,10 +39,6 @@ Escriba el código necesario para llamar a los métodos del contrato `studentReg
 
 ## Push changes
 
-1. Agregar su repositorio
-
-`git remote add origin <URL_A_SU_GITHUB_REPO>`
-
-2. Publicar cambios a su repositorio
+1. Publicar cambios a su repositorio
 
 `git push origin master`
