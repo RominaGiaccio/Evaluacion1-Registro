@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Contract to deploy
-const contractAddress = process.env.GANACHE_REGISTRY_CONTRACT_ADDRESS;
+const contractAddress = process.env.REGISTRY_CONTRACT_ADDRESS;
 
 async function main() {
     // Get provider and signer
@@ -23,9 +23,14 @@ async function main() {
     //------------------------------------------------------------------------
     
     // Llame al método de registro de usuario
+    const studentNumber = 206127;
+    const tx = await contractInstance.addStudent(studentNumber,{
+        gasLimit: 50000
+    });
+    console.log(tx);
 
     // Llame al método para obtener su puntuación y muestrela en la consola
-    const myScore = 0;
+    const myScore = await contractInstance.getScore();
     console.log("");
     console.log("-- Your score is: ", myScore);
 
